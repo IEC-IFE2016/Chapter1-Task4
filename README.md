@@ -37,6 +37,7 @@
   - 将被居中的div的父级元素设为```position: relative```
   - 对被居中的div设置CSS3 transform
   - 示例代码：
+  
     ```
     .parent {
       position: relative;
