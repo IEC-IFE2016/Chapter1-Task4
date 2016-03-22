@@ -51,7 +51,7 @@
     ```
   
 3. 使用top、right、bottom、left时，注意它们都是以自身div的左上角为定位点，相对父级元素的定位。
-   使用负值即可让子div超出父div
+   使用负值即可让子div超出父div，给父div设置```overflow: hidden```即可使超出的部分不可见
    
 ### 任务完成情况
 - [x] 代码实现
