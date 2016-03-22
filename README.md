@@ -37,17 +37,17 @@
   - 将被居中的div的父级元素设为```position: relative```
   - 对被居中的div设置CSS3 transform
   - 示例代码：
-  ```
-  .parent {
-    position: relative;
-  }
-  .child {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  ```
+    ```
+    .parent {
+      position: relative;
+    }
+    .child {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    ```
   
 3. 使用top、right、bottom、left时，注意它们都是以自身div的左上角为定位点，相对父级元素的定位。
    使用负值即可让子div超出父div
