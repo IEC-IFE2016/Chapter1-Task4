@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei UI";
+    min-width: 400px;
+    min-height: 200px;
+}
+
+.block {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 200px;
+    width: 400px;
+    background-color: #ccc;
+    overflow: hidden;
+}
+
+.circle-left {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #fc0;
+    left: -50px;
+    top: -50px;
+}
+
+.circle-right {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #fc0;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
