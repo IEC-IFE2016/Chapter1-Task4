@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 400px;
+    height: 200px;
+    background: #cccccc;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /*
+     * 当设置完left和top之后,我们会发现图片到了正中央的偏右下方
+     * 这是因为50%指的是浏览器当前高度和宽度的50%,这样就会刚好多出来一个container的高度和宽度
+     * 所以解决方法就是设置负margin,hack掉多出来的高度和宽度
+     */
+    margin-left: -200px;
+    margin-top: -100px;
+    overflow: hidden; /* 这里的作用是隐藏两个圆形超出container部分 */
+}
+
+.circle-left-top,.circle-right-bottom {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #ffcc00;
+}
+
+.circle-left-top {
+    /* top,right,bottom,left都是相对父级元素而言,以div的左上角为定位点 */
+    top: -50px;
+    left: -50px;
+}
+
+.circle-right-bottom {
+    bottom: -50px;
+    right: -50px;
+}
